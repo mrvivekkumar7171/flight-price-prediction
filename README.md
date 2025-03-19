@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository focuses on deploying a basic machine learning model of Flight Price Prediction using Flask. It includes interpreting learning curves, evaluating and selecting models, creating a web application with Flask, and deploying the app using Render.
+This repository focuses on deploying a basic machine learning model of Flight Price Prediction using **Flask**. It includes interpreting learning curves, evaluating and selecting models, creating a web application with Flask, and deploying the app using **Render** using **git** and **GitHub**.
 
 # Project Flow Details :
 1. **Model Training:**
@@ -10,15 +10,11 @@ This repository focuses on deploying a basic machine learning model of Flight Pr
     - **Data pre-processing**
     - **Model selection (Learning Curves)**
     - **Model training**
-    - **Model persistence**
+    - **Model persistence**: Using **joblib** to save the model
 
 ---
 
-2. **Create Input form**
-
----
-
-3. **Create the Web Application**
+2. **Create Input form in the Web Application**
     - **Flask**: We built a web application using the Flask framework.
     - **WTForms**: We integrated WTForms for handling web forms and input validation.
     - **HTML Templates**: We utilized HTML templates with Jinja2 for dynamic content rendering.
@@ -26,15 +22,78 @@ This repository focuses on deploying a basic machine learning model of Flight Pr
 
 ---
 
-4. **Create HTML templates**
+3. **Testing on Local Server**
+   - In order to test the model in the local server, we have used the flask
+   ```bash
+   python app.py
+   ```
 
 ---
 
-5. **Testing on Local Server**
+4. **GitHub set-up and pushing changes to Remote Repository**
+### 📥 Set up Git on your system and connect it with GitHub to controll version easily!
+- Install Git For **Windows:**
+- 👉 [Download](https://git-scm.com/download/win) Git from the official website: 
+- Run the installer and follow the default steps. Ensure "Git Bash" is selected during installation.
+- ⚙️ After installation, Configure Git
+   ```bash
+   git config --global user.name "Your Name"
+   git config --global user.email "your-email@example.com"
+   ```
+   Check your config:
+   ```bash
+   git config --list
+   ```
+- 🔐 Generate SSH Key (Optional but recommended)
+   1. Generate a new SSH key:
+      ```bash
+      ssh-keygen -t ed25519 -C "your-email@example.com"
+      ```
+   Press Enter for defaults.
+   2. Start SSH agent:
+      ```bash
+      eval "$(ssh-agent -s)"
+      ```
+   3. Add SSH key:
+      ```bash
+      ssh-add ~/.ssh/id_ed25519
+      ```
+   4. Copy the SSH key:
+      ```bash
+      cat ~/.ssh/id_ed25519.pub
+      ```
+   Copy the output.
+- 🔗 Connect to GitHub
+   1. Go to **GitHub → Settings → SSH and GPG keys → New SSH key**  
+   2. Paste the copied key and save.
+- 📂 Clone Repository from GitHub
+   ```bash
+   git clone git@github.com:username/repo-name.git
+   ```
+   OR (if using HTTPS):
+   ```bash
+   git clone https://github.com/username/repo-name.git
+   ```
+- 🚀 Push Your Code
+   1. Initialize Git:
+      ```bash
+      git init
+      ```
+   2. Add remote repository:
+      ```bash
+      git remote add origin https://github.com/username/repo-name.git
+      ```
+   3. Add and commit:
+      ```bash
+      git add .
+      git commit -m "Initial commit"
+      ```
+   4. Push to GitHub:
+      ```bash
+      git push -u origin master
+      ```
+- ✅ Done! You’re now connected to GitHub 🎉!
 
----
-
-6. **GitHub set-up and pushing changes to Remote Repository**
     ### 📄 Basic Git Commands to Push Files to GitHub
 - **Initialize a Git repository (if not already initialized) (first time only):**
    ```bash
@@ -90,7 +149,7 @@ This repository focuses on deploying a basic machine learning model of Flight Pr
 
 --- 
 
-7. **🚀 API Serving and Deploy Application using Render (💰 Free Plan)**
+5. **🚀 API Serving and Deploy Application using Render (💰 Free Plan)**
     This guide walks you through creating a Render account using GitHub, selecting the Free Plan, and deploying your AI/ML model website hosted on GitHub. **Model Serving**: The trained machine learning model was served as an API using Flask.
     ### 🌐 Create a Render Account via GitHub
     - Go to [Render's Website](https://render.com/).
