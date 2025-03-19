@@ -95,9 +95,13 @@
     <br>
     <div>{{ form.submit() }}</div>
     <br>
+
+    {% if output[1] == True %}
     <div>
-        {{ output }}
+        {{ output[0] }}
     </div>
+    {% endif %}
+
     <br>
     <div>
         <p>Redirect to Homepage?&nbsp;&nbsp;<a href="{{ url_for('home') }}">Home</a></p>
