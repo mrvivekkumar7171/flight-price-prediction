@@ -1,6 +1,5 @@
 import pandas as pd
 import joblib
-import os
 from flask import (
     Flask,
     url_for,
@@ -42,5 +41,4 @@ def predict():
 
 
 if __name__ == "__main__":
-    port = int(os.environ.get('PORT', 10000))
-    app.run(host='0.0.0.0', port=port,debug=True)
+    app.run(debug=True)
