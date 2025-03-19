@@ -90,14 +90,14 @@ This repository focuses on deploying a basic machine learning model of Flight Pr
 
 --- 
 
-8. **🚀 API Serving and Deploy Application using Render (Free Plan)**
+8. **🚀 API Serving and Deploy Application using Render (💰 Free Plan)**
     This guide walks you through creating a Render account using GitHub, selecting the Free Plan, and deploying your AI/ML model website hosted on GitHub. **Model Serving**: The trained machine learning model was served as an API using Flask.
     ### 🌐 Create a Render Account via GitHub
     - Go to [Render's Website](https://render.com/).
     - Select **Sign up with GitHub**.
     - Authorize **Render** to access your GitHub account and complete any additional steps (like confirming email if required).
-    - 💰 Choose Free Plan: that Free Static Site Hosting, Web Services (750 hours/month) and PostgreSQL database (up to 1 GB)**
-    -  Prepare Your GitHub Repository has all necessary files (HTML, Python/Flask/Django, model files, etc.) and a `requirements.txt` file listing dependencieslike (flask, scikit-learn, numpy, pandas, etc.)
+    - Choose Free Plan: that Free Static Site Hosting, Web Services (750 hours/month) and PostgreSQL database (up to 1 GB).
+    - Prepare Your GitHub Repository has all necessary files (HTML, Python/Flask/Django, model files, etc.) and a `requirements.txt` file listing dependencieslike (flask, scikit-learn, numpy, pandas, etc.)
     ### 🚀 Deploy GitHub AI/ML Website on Render
     - On Render Dashboard, click **New + → Web Service**.
     - Under **Connect a repository**, select **GitHub**.
@@ -105,8 +105,8 @@ This repository focuses on deploying a basic machine learning model of Flight Pr
     - Select the repository containing your AI/ML model website.
     ### 🛠️ Configure Deployment:
     - **Name**: Set a name for your service.
-    - **Branch**: Choose `main` or your desired branch.
-    - **Runtime**: Select **Python**.
+    - **Branch**: Choose `master` or your desired branch.
+    - **Runtime**: Select **Python 3**.
     - **Start Command**:
         ```bash
         gunicorn app:app
@@ -115,7 +115,7 @@ This repository focuses on deploying a basic machine learning model of Flight Pr
         _Environment file `.env` (if needed)_
     - Under **Instance Type**, select **Free Instance**.
     - Go to **Environment** section and add any variables (like API keys, model paths, etc.) (if required).
-    - Click on **Create Web Service**. Render will build and deploy your app. Once complete, you’ll receive a **public URL** to access your website!
+    - Click on **Create Web Service**. Render will build and deploy your app. Once complete, you’ll receive a [**public URL**](https://flight-price-prediction-oo4w.onrender.com) to access your website!
     ### 🔄 Auto-Deploy on GitHub Changes
     Render automatically redeploys when you push new commits to the connected branch and update any files (model, code, HTML, CSS).
     ### ✅ Done! Your AI/ML model website is now live. 🎉
