@@ -5,7 +5,7 @@
 This repository focuses on deploying a basic machine learning model of Flight Price Prediction using Flask. It includes interpreting learning curves, evaluating and selecting models, creating a web application with Flask, and deploying the app using Render.
 
 # Project Flow Details :
-2. **Model Training:**
+1. **Model Training:**
     - **Gather and Split data**
     - **Data pre-processing**
     - **Model selection (Learning Curves)**
@@ -14,11 +14,11 @@ This repository focuses on deploying a basic machine learning model of Flight Pr
 
 ---
 
-3. **Create Input form**
+2. **Create Input form**
 
 ---
 
-4. **Create the Web Application**
+3. **Create the Web Application**
     - **Flask**: We built a web application using the Flask framework.
     - **WTForms**: We integrated WTForms for handling web forms and input validation.
     - **HTML Templates**: We utilized HTML templates with Jinja2 for dynamic content rendering.
@@ -26,15 +26,15 @@ This repository focuses on deploying a basic machine learning model of Flight Pr
 
 ---
 
-5. **Create HTML templates**
+4. **Create HTML templates**
 
 ---
 
-6. **Testing on Local Server**
+5. **Testing on Local Server**
 
 ---
 
-7. **GitHub set-up and pushing changes to Remote Repository**
+6. **GitHub set-up and pushing changes to Remote Repository**
     ### 📄 Basic Git Commands to Push Files to GitHub
 - **Initialize a Git repository (if not already initialized) (first time only):**
    ```bash
@@ -90,7 +90,7 @@ This repository focuses on deploying a basic machine learning model of Flight Pr
 
 --- 
 
-8. **🚀 API Serving and Deploy Application using Render (💰 Free Plan)**
+7. **🚀 API Serving and Deploy Application using Render (💰 Free Plan)**
     This guide walks you through creating a Render account using GitHub, selecting the Free Plan, and deploying your AI/ML model website hosted on GitHub. **Model Serving**: The trained machine learning model was served as an API using Flask.
     ### 🌐 Create a Render Account via GitHub
     - Go to [Render's Website](https://render.com/).
@@ -118,43 +118,7 @@ This repository focuses on deploying a basic machine learning model of Flight Pr
     - Click on **Create Web Service**. Render will build and deploy your app. Once complete, you’ll receive a [**public URL**](https://flight-price-prediction-oo4w.onrender.com) to access your website!
     ### 🔄 Auto-Deploy on GitHub Changes
     Render automatically redeploys when you push new commits to the connected branch and update any files (model, code, HTML, CSS).
-    ### ✅ Done! Your AI/ML model website is now live. 🎉
 
 ---
 
-<!-- <style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 50px;
-    }
-    .form-container {
-        max-width: 500px;
-        margin: auto;
-        padding: 20px;
-        border: 1px solid #ccc;
-        border-radius: 10px;
-    }
-    .form-container input {
-        width: 100%;
-        padding: 10px;
-        margin: 5px 0 20px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        box-sizing: border-box;
-    }
-    .form-container input[type="submit"] {
-        background-color: #4CAF50;
-        color: white;
-        border: none;
-    }
-    .form-container input[type="submit"]:hover {
-        background-color: #45a049;
-    }
-    .result {
-        font-size: 1.5em;
-        color: #4CAF50;
-        text-align: center;
-        margin-top: 20px;
-    }
-</style> -->
+# ✅ Done! Your AI/ML model website is now live. 🎉
