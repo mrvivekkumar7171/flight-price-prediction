@@ -174,7 +174,7 @@ This repository focuses on deploying a basic machine learning model of Flight Pr
         _Environment file `.env` (if needed)_
     - Under **Instance Type**, select **Free Instance**.
     - Go to **Environment** section and add any variables (like API keys, model paths, etc.) (if required).
-    - Click on **Create Web Service**. Render will build and deploy your app. Once complete, you’ll receive a [**public URL**](https://main-ml-model.onrender.com) to access your website!
+    - Click on **Create Web Service**. Render will build and deploy your app. Once complete, you’ll receive a [**public URL**](https://flight-price-prediction-oo4w.onrender.com) to access your website!
     ### 🔄 Auto-Deploy on GitHub Changes
     Render automatically redeploys when you push new commits to the connected branch and update any files (model, code, HTML, CSS).
 
